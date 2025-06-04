@@ -5,13 +5,14 @@ This project contains a simple and colorful snake game built with **React** (Vit
 ## Development
 
 ### Client
+
 Use the Vite development server to iterate on the game quickly:
+
 ```bash
 cd client
 npm install
 npm run dev
 ```
-
 
 This runs the game at `http://localhost:5173` and auto reloads on changes.
 
@@ -30,7 +31,6 @@ npm start
 ```
 
 Then open `http://localhost:3001` in your browser to play the game.
-
 
 ## Build
 
