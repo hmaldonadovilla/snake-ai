@@ -1,0 +1,9 @@
+.game-container {
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+
+.grid div {
+  border: 1px solid white;
+}
