@@ -115,14 +115,7 @@ function SnakeGame() {
       <p>Score: {score}</p>
       <p>High Score: {highScore}</p>
       {!isRunning && <p>Game Over! Refresh to play again.</p>}
-      <div
-        className="grid"
-        style={{
-          display: 'grid',
-          gridTemplateRows: `repeat(${GRID_SIZE}, 1fr)`,
-          gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)`,
-        }}
-      >
+      <div className="grid">
         {Array.from({ length: GRID_SIZE * GRID_SIZE }).map((_, idx) => {
           const x = idx % GRID_SIZE;
           const y = Math.floor(idx / GRID_SIZE);
@@ -133,7 +126,7 @@ function SnakeGame() {
             : isFood
             ? 'red'
             : 'lightgray';
-          return <div key={idx} style={{ width: 20, height: 20, background }} />;
+          return <div key={idx} style={{ background }} />;
         })}
       </div>
     </div>
